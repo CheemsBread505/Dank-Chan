@@ -1,0 +1,15 @@
+body{
+    background-color: #416528;
+}
+
+.welcome{
+    color: #880000;
+    font-size: 30px;
+    font-weight: bold;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #6b0101;
+}
+
+#textBox{
+    width: 180px;
+}
