@@ -13,3 +13,7 @@ body{
 #textBox{
     width: 180px;
 }
+
+div.postbox{
+    color: #6b0101;
+}

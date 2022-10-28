@@ -14,15 +14,24 @@
     <!--POST-->
     <form action="post.php" method="POST">
         <label for="uname">User name:</label><br>
-        <input type="text" id="uname" name="uname" value="Anonymous"><br>
+        <input type="text" id="uname" name="uname" maxlength="10" value="Anonymous"><br>
         <br>
         <input type="text" id="subject" name="subject" placeholder="subject"><br>
-        <textarea id="textBox" name="textBox" rows="4" placeholder="comment"></textarea>
+        <textarea id="textBox" name="textBox" rows="4" placeholder="comment"></textarea><br>
+        <input type="file" id="myFile" name="filename"><br>
+        <br>
         <input type="submit" value="Submit">
     </form> 
 
+    <br>
+    <hr>
+
     <?php
-        echo('<script>console.log("Hello from /b/!");</script>')
+        $fh = fopen('chat.txt','r');
+        while ($line = fgets($fh)) {
+        echo($line);
+        }
+        fclose($fh);
     ?>
 </body>
 </html>
