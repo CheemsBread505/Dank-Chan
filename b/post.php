@@ -16,3 +16,7 @@ else {
    die('no post data to process');
 }
 ?>
+
+<html>
+    <script type="text/javascript">location.href = '/b/';</script>
+</html>

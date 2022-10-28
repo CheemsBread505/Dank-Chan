@@ -28,3 +28,11 @@ div.boards{
     margin-left: auto;
     margin-right: auto;
 }
+
+.help{
+    font-size: 11.9px;
+}
+
+table, th, td {
+    border:1px solid black;
+  }
