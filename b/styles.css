@@ -14,6 +14,12 @@ body{
     width: 180px;
 }
 
-div.postbox{
+div{
     color: #6b0101;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+    margin: 14px;  
+    background-color: #9cc183;
+    word-wrap: break-word;
+    width: 460px;
 }
