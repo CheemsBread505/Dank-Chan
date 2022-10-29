@@ -1,6 +1,5 @@
 <?php
 $random = (rand());
-
 if(isset($_POST['uname']) && isset($_POST['textBox']) && isset($_POST['subject'])) {
     $subjectHeader = $_POST['subject'];
     $data = '<div class="postbox'.$random.'">'. '<h3>'.$subjectHeader.'</h3>'. '<p>'.$_POST['uname'].': '.$random.'</p>'. '<hr>'. '<p>'.$_POST['textBox'].'</p>'. '</div>'. "\r\n";

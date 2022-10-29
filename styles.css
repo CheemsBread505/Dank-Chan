@@ -3,12 +3,19 @@ body{
 }
 
 div.LinkBox{
-    width: 400px;
+    width: 445px;
     height: auto;
     border: 3px solid rgb(0, 0, 0);
     padding: 12px;
     margin: auto;
     background-color:#b8bd7a;
+}
+
+.helpH1{
+    text-align: center;
+    color: #880000;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #6b0101;
 }
 
 div.boards{
@@ -22,7 +29,7 @@ div.boards{
 }
 
 .logo{
-    width: 300px;
+    width: 350px;
     height: 120;
     display: block;
     margin-left: auto;
@@ -35,4 +42,16 @@ div.boards{
 
 table, th, td {
     border:1px solid black;
-  }
+}
+
+.reply{
+    width: 445px;
+    height: auto;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 4px;
+    background-color: #5a8938;
+}
+
+.example{
+    width: 430px;
+}

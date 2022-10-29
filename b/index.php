@@ -16,9 +16,9 @@
         <label for="uname">User name:</label><br>
         <input type="text" id="uname" name="uname" maxlength="10" value="Anonymous"><br>
         <br>
-        <input type="text" id="subject" name="subject" placeholder="subject"><br>
-        <textarea id="textBox" name="textBox" rows="4" placeholder="comment"></textarea><br>
-        <input type="file" id="myFile" name="filename"><br>
+        <input type="text" id="subject" name="subject" maxlength="29" placeholder="subject"><br>
+        <textarea id="textBox" name="textBox" rows="4" placeholder="comment" maxlength="1200"></textarea><br>
+        <input type="file" id="imageUPload" name="imageUPload"><br>
         <br>
         <input type="submit" value="Submit">
     </form> 
