@@ -11,14 +11,14 @@
 <body>
     <h2 class="welcome">Welcome to /b/!</h2>
 
-    <!--POST-->
-    <form action="post.php" method="POST">
+    <!--Users input to be posted-->
+    <form action="post.php" method="POST" enctype="multipart/form-data">
         <label for="uname">User name:</label><br>
         <input type="text" id="uname" name="uname" maxlength="10" value="Anonymous"><br>
         <br>
         <input type="text" id="subject" name="subject" maxlength="29" placeholder="subject"><br>
         <textarea id="textBox" name="textBox" rows="4" placeholder="comment" maxlength="1200"></textarea><br>
-        <input type="file" id="imageUPload" name="imageUPload"><br>
+        <input type="file" name="fileToUpload" id="fileToUpload"><br>
         <br>
         <input type="submit" value="Submit">
     </form> 
@@ -26,6 +26,7 @@
     <br>
     <hr>
 
+    <!--Loads the user's posts from the file-->
     <?php
         $fh = fopen('chat.txt','r');
         while ($line = fgets($fh)) {

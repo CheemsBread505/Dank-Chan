@@ -27,3 +27,7 @@ div{
 .ID{
     font-size: 7px;
 }
+
+.imageInput{
+    max-height:512px;
+}
