@@ -1,8 +1,16 @@
 <?php
 $random = (rand());
 if(isset($_POST['uname']) && isset($_POST['textBox']) && isset($_POST['subject'])) {
+
+    $username = $_POST['uname'];
+    $textbox = $_POST['textBox'];
     $subjectHeader = $_POST['subject'];
-    $data = '<div class="postbox'.$random.'">'. '<h3>'.$subjectHeader.'</h3>'. '<p>'.$_POST['uname'].': '.$random.'</p>'. '<hr>'. '<p>'.$_POST['textBox'].'</p>'. '</div>'. "\r\n";
+    
+    $usernameClean = strip_tags($username);
+    $textboxClean = strip_tags($textbox);
+    $subjectHeadeClean = strip_tags($subjectHeader);
+
+    $data = '<div class="postbox'.$random.'">'. '<h3>'.$subjectHeadeClean.'</h3>'. '<p>'.$usernameClean.': '.$random.'</p>'. '<hr>'. '<p>'.$textboxClean.'</p>'. '</div>'. "\r\n";
     $ret = file_put_contents('chat.txt', $data, FILE_APPEND | LOCK_EX);
     if($ret === false) {
         die('There was an error writing this file');
